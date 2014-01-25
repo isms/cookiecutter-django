@@ -13,20 +13,16 @@
     <![endif]-->
 
     {% block css %}
-    <!-- Latest compiled and minified CSS -->
+    {# Latest compiled and minified CSS #}
     <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css">
 
-    <!-- Optional theme -->
+    {# Optional theme #}
     <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap-theme.min.css">
 
-    <!-- Your stuff: Third-party css libraries go here -->
+    {# Your stuff: Third-party css libraries go here #}
 
-    <!-- This file store project specific CSS -->
+    {# This file store project specific CSS #}
     <link href="{% static 'css/project.css' %}" rel="stylesheet">
-    {% endblock %}
-
-    {% block angular %}
-      <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.9/angular.min.js"></script>
     {% endblock %}
 
   </head>
@@ -63,23 +59,21 @@
         <p>Use this document as a way to quick start any new project.</p>
       {% endblock content %}
 
-    </div> <!-- /container -->
+    </div>
+    {# end container #}
     
     {% block modal %}{% endblock modal %}
 
-    <!-- Le javascript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
     {% block javascript %}
-      <!-- Latest JQuery -->
+      {# Latest JQuery #}
       <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 
-      <!-- Latest compiled and minified JavaScript -->
+      {# Latest compiled and minified JavaScript #}
       <script src="//netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
 
-      <!-- Your stuff: Third-party javascript libraries go here -->
+      {# Your stuff: Third-party javascript libraries go here #}
 
-      <!-- place project specific Javascript in this file -->
+      {# place project specific Javascript in this file #}
       <script src="{% static 'js/project.js' %}"></script>
     {% endblock javascript %}
   </body>

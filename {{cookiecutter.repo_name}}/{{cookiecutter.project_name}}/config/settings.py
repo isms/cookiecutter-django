@@ -18,7 +18,7 @@ try:
     from S3 import CallingFormat
     AWS_CALLING_FORMAT = CallingFormat.SUBDOMAIN
 except ImportError:
-    # TODO: Fix this where even if in Dev this class is called.
+    # This should fail in the development env because we don't have django-storages installed
     pass
 
 from configurations import Configuration, values
@@ -117,7 +117,7 @@ class Common(Configuration):
 
     ########## DATABASE CONFIGURATION
     # See: https://docs.djangoproject.com/en/dev/ref/settings/#databases
-    DATABASES = values.DatabaseURLValue('postgres://localhost/{{cookiecutter.repo_name}}')
+    DATABASES = values.DatabaseURLValue()
     ########## END DATABASE CONFIGURATION
 
     ########## CACHING

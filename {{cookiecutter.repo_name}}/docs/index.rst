@@ -13,7 +13,7 @@ Contents:
 
    install
    deploy
-   tests
+   app
 
 
 
